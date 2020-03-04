@@ -24,7 +24,7 @@ export default class App extends Component {
 
             <ul>
                {this.state.peopleInSpace.map(p => {
-                  return <li> {p.name} is in space!!</li>
+                  return <li key={p.name}> {p.name} is in space!!</li>
                 })}
             </ul>
         )
